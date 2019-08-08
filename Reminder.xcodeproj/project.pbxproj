@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		DB255F5522FB196100ED133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5422FB196100ED133D /* AppDelegate.swift */; };
-		DB255F5722FB196100ED133D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5622FB196100ED133D /* ViewController.swift */; };
-		DB255F5A22FB196100ED133D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB255F5822FB196100ED133D /* Main.storyboard */; };
+		DB255F5722FB196100ED133D /* RemindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5622FB196100ED133D /* RemindVC.swift */; };
 		DB255F5D22FB196100ED133D /* Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5B22FB196100ED133D /* Reminder.xcdatamodeld */; };
 		DB255F5F22FB196200ED133D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB255F5E22FB196200ED133D /* Assets.xcassets */; };
-		DB255F6222FB196200ED133D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB255F6022FB196200ED133D /* LaunchScreen.storyboard */; };
 		DB255F6D22FB196200ED133D /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F6C22FB196200ED133D /* ReminderTests.swift */; };
 		DB255F7822FB196200ED133D /* ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F7722FB196200ED133D /* ReminderUITests.swift */; };
+		DB255F8C22FB1CF900ED133D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB255F6022FB196200ED133D /* LaunchScreen.storyboard */; };
+		DB255F9422FB1DC300ED133D /* RemindVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F9322FB1DC300ED133D /* RemindVM.swift */; };
+		DB255F9822FB1E1200ED133D /* RemindTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F9722FB1E1200ED133D /* RemindTable.swift */; };
+		DB255F9D22FBDE8000ED133D /* CellActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F9C22FBDE8000ED133D /* CellActions.swift */; };
+		DB255FA022FBDEB800ED133D /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F9F22FBDEB800ED133D /* CellModel.swift */; };
+		DBA524B422FBE5B400E2B322 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524B322FBE5B400E2B322 /* MainTabBarVC.swift */; };
+		DBA524B722FBE65200E2B322 /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524B622FBE65200E2B322 /* TasksVC.swift */; };
+		DBA524BC22FBE6E900E2B322 /* TasksVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524BB22FBE6E900E2B322 /* TasksVM.swift */; };
+		DBA524BE22FBE71300E2B322 /* TasksTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524BD22FBE71300E2B322 /* TasksTable.swift */; };
+		DBA524C122FC1DBB00E2B322 /* CreateTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524C022FC1DBB00E2B322 /* CreateTaskVC.swift */; };
+		DBA524C422FC1DD800E2B322 /* CreateTaskVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA524C322FC1DD800E2B322 /* CreateTaskVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +46,7 @@
 /* Begin PBXFileReference section */
 		DB255F5122FB196100ED133D /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB255F5422FB196100ED133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB255F5622FB196100ED133D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB255F5922FB196100ED133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB255F5622FB196100ED133D /* RemindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindVC.swift; sourceTree = "<group>"; };
 		DB255F5C22FB196100ED133D /* Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reminder.xcdatamodel; sourceTree = "<group>"; };
 		DB255F5E22FB196200ED133D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB255F6122FB196200ED133D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,16 @@
 		DB255F7322FB196200ED133D /* ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB255F7722FB196200ED133D /* ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITests.swift; sourceTree = "<group>"; };
 		DB255F7922FB196200ED133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB255F9322FB1DC300ED133D /* RemindVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindVM.swift; sourceTree = "<group>"; };
+		DB255F9722FB1E1200ED133D /* RemindTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindTable.swift; sourceTree = "<group>"; };
+		DB255F9C22FBDE8000ED133D /* CellActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellActions.swift; sourceTree = "<group>"; };
+		DB255F9F22FBDEB800ED133D /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		DBA524B322FBE5B400E2B322 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		DBA524B622FBE65200E2B322 /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
+		DBA524BB22FBE6E900E2B322 /* TasksVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVM.swift; sourceTree = "<group>"; };
+		DBA524BD22FBE71300E2B322 /* TasksTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTable.swift; sourceTree = "<group>"; };
+		DBA524C022FC1DBB00E2B322 /* CreateTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskVC.swift; sourceTree = "<group>"; };
+		DBA524C322FC1DD800E2B322 /* CreateTaskVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +97,7 @@
 		DB255F4822FB196100ED133D = {
 			isa = PBXGroup;
 			children = (
-				DB255F5322FB196100ED133D /* Reminder */,
+				DB255F5322FB196100ED133D /* Source */,
 				DB255F6B22FB196200ED133D /* ReminderTests */,
 				DB255F7622FB196200ED133D /* ReminderUITests */,
 				DB255F5222FB196100ED133D /* Products */,
@@ -96,18 +114,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DB255F5322FB196100ED133D /* Reminder */ = {
+		DB255F5322FB196100ED133D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DB255F5422FB196100ED133D /* AppDelegate.swift */,
-				DB255F5622FB196100ED133D /* ViewController.swift */,
-				DB255F5822FB196100ED133D /* Main.storyboard */,
-				DB255F5E22FB196200ED133D /* Assets.xcassets */,
-				DB255F6022FB196200ED133D /* LaunchScreen.storyboard */,
-				DB255F6322FB196200ED133D /* Info.plist */,
+				DB255F9E22FBDEAE00ED133D /* Base */,
+				DB255F8A22FB1CC600ED133D /* Models */,
+				DB255F8D22FB1D1C00ED133D /* Repositories */,
+				DB255F9022FB1D5F00ED133D /* UI */,
+				DB255F8722FB1A5C00ED133D /* Resources */,
+				DB255F8822FB1A6600ED133D /* Startup */,
+				DB255F8922FB1A6D00ED133D /* Supporting Files */,
 				DB255F5B22FB196100ED133D /* Reminder.xcdatamodeld */,
 			);
-			path = Reminder;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		DB255F6B22FB196200ED133D /* ReminderTests */ = {
@@ -128,6 +147,174 @@
 			path = ReminderUITests;
 			sourceTree = "<group>";
 		};
+		DB255F8722FB1A5C00ED133D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F5E22FB196200ED133D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB255F8822FB1A6600ED133D /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F5422FB196100ED133D /* AppDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		DB255F8922FB1A6D00ED133D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F6022FB196200ED133D /* LaunchScreen.storyboard */,
+				DB255F6322FB196200ED133D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB255F8A22FB1CC600ED133D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB255F8D22FB1D1C00ED133D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F8F22FB1D3100ED133D /* Data Base */,
+				DB255F8E22FB1D2700ED133D /* Network */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DB255F8E22FB1D2700ED133D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DB255F8F22FB1D3100ED133D /* Data Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Base";
+			sourceTree = "<group>";
+		};
+		DB255F9022FB1D5F00ED133D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524B222FBE58D00E2B322 /* Tabs */,
+				DBA524B522FBE5D800E2B322 /* Tasks */,
+				DB255F9122FB1D7E00ED133D /* Remind */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DB255F9122FB1D7E00ED133D /* Remind */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F5622FB196100ED133D /* RemindVC.swift */,
+				DB255F9222FB1DB000ED133D /* view model */,
+				DB255F9522FB1DE600ED133D /* table */,
+			);
+			path = Remind;
+			sourceTree = "<group>";
+		};
+		DB255F9222FB1DB000ED133D /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F9322FB1DC300ED133D /* RemindVM.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
+		DB255F9522FB1DE600ED133D /* table */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F9722FB1E1200ED133D /* RemindTable.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		DB255F9B22FBDE6400ED133D /* CallBacks */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F9C22FBDE8000ED133D /* CellActions.swift */,
+			);
+			path = CallBacks;
+			sourceTree = "<group>";
+		};
+		DB255F9E22FBDEAE00ED133D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DB255FA122FBE25400ED133D /* Models */,
+				DB255F9B22FBDE6400ED133D /* CallBacks */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DB255FA122FBE25400ED133D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB255F9F22FBDEB800ED133D /* CellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBA524B222FBE58D00E2B322 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524B322FBE5B400E2B322 /* MainTabBarVC.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		DBA524B522FBE5D800E2B322 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524B622FBE65200E2B322 /* TasksVC.swift */,
+				DBA524B922FBE6D000E2B322 /* view model */,
+				DBA524B822FBE6CA00E2B322 /* table */,
+				DBA524BF22FC1D9F00E2B322 /* Create */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		DBA524B822FBE6CA00E2B322 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524BD22FBE71300E2B322 /* TasksTable.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
+		DBA524B922FBE6D000E2B322 /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524BB22FBE6E900E2B322 /* TasksVM.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
+		DBA524BF22FC1D9F00E2B322 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524C022FC1DBB00E2B322 /* CreateTaskVC.swift */,
+				DBA524C222FC1DC500E2B322 /* view model */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		DBA524C222FC1DC500E2B322 /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				DBA524C322FC1DD800E2B322 /* CreateTaskVM.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +325,7 @@
 				DB255F4D22FB196100ED133D /* Sources */,
 				DB255F4E22FB196100ED133D /* Frameworks */,
 				DB255F4F22FB196100ED133D /* Resources */,
+				DB255FA222FBE28800ED133D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,9 +420,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB255F6222FB196200ED133D /* LaunchScreen.storyboard in Resources */,
+				DB255F8C22FB1CF900ED133D /* LaunchScreen.storyboard in Resources */,
 				DB255F5F22FB196200ED133D /* Assets.xcassets in Resources */,
-				DB255F5A22FB196100ED133D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +441,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DB255FA222FBE28800ED133D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB255F4D22FB196100ED133D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB255F5722FB196100ED133D /* ViewController.swift in Sources */,
+				DB255F5722FB196100ED133D /* RemindVC.swift in Sources */,
 				DB255F5522FB196100ED133D /* AppDelegate.swift in Sources */,
+				DB255FA022FBDEB800ED133D /* CellModel.swift in Sources */,
+				DBA524B422FBE5B400E2B322 /* MainTabBarVC.swift in Sources */,
+				DB255F9822FB1E1200ED133D /* RemindTable.swift in Sources */,
+				DBA524C422FC1DD800E2B322 /* CreateTaskVM.swift in Sources */,
+				DBA524C122FC1DBB00E2B322 /* CreateTaskVC.swift in Sources */,
+				DBA524BE22FBE71300E2B322 /* TasksTable.swift in Sources */,
 				DB255F5D22FB196100ED133D /* Reminder.xcdatamodeld in Sources */,
+				DBA524B722FBE65200E2B322 /* TasksVC.swift in Sources */,
+				DBA524BC22FBE6E900E2B322 /* TasksVM.swift in Sources */,
+				DB255F9D22FBDE8000ED133D /* CellActions.swift in Sources */,
+				DB255F9422FB1DC300ED133D /* RemindVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +514,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB255F5822FB196100ED133D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB255F5922FB196100ED133D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB255F6022FB196200ED133D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +647,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQL85C5GY;
-				INFOPLIST_FILE = Reminder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQL85C5GY;
-				INFOPLIST_FILE = Reminder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
