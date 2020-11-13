@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0B963C255E87EB0030F19C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B963B255E87EB0030F19C /* Extensions.swift */; };
+		DB1122A0255EFCA60057615B /* DatePickerModalButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB11229F255EFCA60057615B /* DatePickerModalButtonView.swift */; };
 		DB255F5522FB196100ED133D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5422FB196100ED133D /* AppDelegate.swift */; };
 		DB255F5722FB196100ED133D /* RemindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5622FB196100ED133D /* RemindVC.swift */; };
 		DB255F5D22FB196100ED133D /* Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB255F5B22FB196100ED133D /* Reminder.xcdatamodeld */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0B963B255E87EB0030F19C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DB11229F255EFCA60057615B /* DatePickerModalButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerModalButtonView.swift; sourceTree = "<group>"; };
 		DB255F5122FB196100ED133D /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB255F5422FB196100ED133D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB255F5622FB196100ED133D /* RemindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindVC.swift; sourceTree = "<group>"; };
@@ -94,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB0B963A255E87DE0030F19C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB0B963B255E87EB0030F19C /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB11229E255EFC670057615B /* DatePickerModalButton */ = {
+			isa = PBXGroup;
+			children = (
+				DB11229F255EFCA60057615B /* DatePickerModalButtonView.swift */,
+			);
+			path = DatePickerModalButton;
+			sourceTree = "<group>";
+		};
 		DB255F4822FB196100ED133D = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +137,7 @@
 		DB255F5322FB196100ED133D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DB0B963A255E87DE0030F19C /* Helpers */,
 				DB255F9E22FBDEAE00ED133D /* Base */,
 				DB255F8A22FB1CC600ED133D /* Models */,
 				DB255F8D22FB1D1C00ED133D /* Repositories */,
@@ -301,6 +322,7 @@
 		DBA524BF22FC1D9F00E2B322 /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				DB11229E255EFC670057615B /* DatePickerModalButton */,
 				DBA524C022FC1DBB00E2B322 /* CreateTaskVC.swift */,
 				DBA524C222FC1DC500E2B322 /* view model */,
 			);
@@ -457,7 +479,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -474,11 +497,13 @@
 				DBA524C422FC1DD800E2B322 /* CreateTaskVM.swift in Sources */,
 				DBA524C122FC1DBB00E2B322 /* CreateTaskVC.swift in Sources */,
 				DBA524BE22FBE71300E2B322 /* TasksTable.swift in Sources */,
+				DB1122A0255EFCA60057615B /* DatePickerModalButtonView.swift in Sources */,
 				DB255F5D22FB196100ED133D /* Reminder.xcdatamodeld in Sources */,
 				DBA524B722FBE65200E2B322 /* TasksVC.swift in Sources */,
 				DBA524BC22FBE6E900E2B322 /* TasksVM.swift in Sources */,
 				DB255F9D22FBDE8000ED133D /* CellActions.swift in Sources */,
 				DB255F9422FB1DC300ED133D /* RemindVM.swift in Sources */,
+				DB0B963C255E87EB0030F19C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQL85C5GY;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQL85C5GY;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
